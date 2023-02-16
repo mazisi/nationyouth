@@ -147,7 +147,7 @@
 						<figure class="shape lg new-angle" >
 							<div style="max-height: 200px;overflow: hidden; height: 200px">
 								<img alt="" 
-								src="{{ asset('storage/app/public/course_pics/'.$course->course_image) }}" style="max-height: 421px; overflow: hidden;"></div>
+								src="{{ asset('storage/course_pics/'.$course->course_image) }}" style="max-height: 421px; overflow: hidden;"></div>
 								<a href="#" data-toggle="modal" data-target="#read_more{{ $course->id }}" class="shape new-angle"><span>+</span></a>
 							</figure>
 							<div class="feature-details2">

@@ -35,7 +35,7 @@
 				                		<div class="post-item">
 											
 											<div class="details-img">
-												<img src="{{ asset('storage/app/public/blog/'.$blog->blog_image) }}" alt="Blog post" style=" max-height: 350px;">
+												<img src="{{ asset('storage/blog/'.$blog->blog_image) }}" alt="Blog post" style=" max-height: 350px;">
 											</div>
 										    
 										    <article class="post-content">

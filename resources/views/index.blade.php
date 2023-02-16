@@ -85,7 +85,7 @@
             </div>
            
           </div>
-          <div data-thumb="assets/images/home/bg6.jpg" data-src="assets/images/home/bg6.jpg">
+          <div data-thumb="{{ asset('assets/images/home/bg6.jpg') }}" data-src="{{ asset('assets/images/home/bg6.jpg') }}">
             <div class="row">
 
               <div class="col-md-3"></div>
@@ -101,7 +101,7 @@
             
           </div>
 
-          <div data-thumb="assets/images/home/bg8.png" data-src="assets/images/home/bg8.png">
+          <div data-thumb="{{ asset('assets/images/home/bg8.png') }}" data-src="{{ asset('assets/images/home/bg8.png') }}">
             <div class="row">
 
               <div class="col-md-3"></div>
@@ -190,7 +190,7 @@
   <div class="container">
             
             <div class="row">
-              <div class="col-lg-12 sec-bg left circle parallax" data-stellar-background-ratio="0.4" data-overlay="rgba(0,0,0,.4)" style="background-image: url(&quot;assets/images/bgs/bg-05.jpg&quot;); background-position: 0px -2186.85px;"><div class="parallax-overlay" style="background-color:rgba(0,0,0,.4)"></div>
+              <div class="col-lg-12 sec-bg left circle parallax" data-stellar-background-ratio="0.4" data-overlay="rgba(0,0,0,.4)" style="background-image: url(&quot;{{ asset('assets/images/bgs/bg-05.jpg') }}&quot;); background-position: 0px -2186.85px;"><div class="parallax-overlay" style="background-color:rgba(0,0,0,.4)"></div>
             <div class="col-md-2"></div>
             <div class="col-md-8 padding-vertical-80">
               <div class="row relative">
@@ -267,7 +267,7 @@
                       <div class="post-image">
                         <a href="{{ route('blogs.index') }}">
                          <div style="height: 25rem !important; max-height: 25rem !important; overflow: hidden !important;">
-                             <img src="{{ asset('storage/app/public/blog/'.$blog->blog_image) }}" alt=" Blog post " >
+                             <img src="{{ asset('storage/blog/'.$blog->blog_image) }}" alt=" Blog post " >
                           </div>
                         </a>
                       </div>
@@ -305,7 +305,7 @@
                     @foreach ($testimonial as $testimonial)
                     <div class="testimonials-bg">
                       <div class="testimonials-img">
-                        <img alt="image" src="{{ asset('storage/app/public/testimonials/'.$testimonial->testimonial_image) }}" style="max-width: 120px; max-height: 120px">
+                        <img alt="image" src="{{ asset('storage/testimonials/'.$testimonial->testimonial_image) }}" style="max-width: 120px; max-height: 120px">
                       </div>
                       <p>"{{ $testimonial->body }}"</p>
                       <div class="testimonials-name">

@@ -12,7 +12,7 @@
             
               <nav aria-label="breadcrumb" class="d-none d-md-inline-block ml-md-4">
                 <ol class="breadcrumb breadcrumb-links breadcrumb-dark">
-                  <li class="breadcrumb-item"><a href="#"><i class="fas fa-home"></i></a></li>
+                  <li class="breadcrumb-item"><a href="/"><i class="fas fa-home"></i></a></li>
                   <li class="breadcrumb-item active" aria-current="page">Users</li>
                 </ol>
               </nav>
@@ -62,9 +62,9 @@
                           {{
 
                             if ($user->picture) {
-                              $img = asset('storage/app/public/user_pics/'.$user->picture);
+                              $img = asset('storage/user_pics/'.$user->picture);
                             } else {
-                              $img = asset('public/dash_assets/img/avatar.png');
+                              $img = asset('dash_assets/img/avatar.png');
                             }
                             
 

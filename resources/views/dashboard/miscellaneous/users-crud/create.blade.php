@@ -52,12 +52,7 @@
                  </div>
             </div>
 
-             <div class="col-md-6" style="display: none;" id="password">
-              <div class="form-group">
-                <label>Password</label>
-               <input type="password"  name="password" class="form-control" required>
-               </div>
-          </div> 
+           
 
             <div class="col-md-6">
               <div class="form-group">

@@ -36,13 +36,13 @@ class AdminsController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)    {
+    public function store(Request $request){
        $request->validate([
             'first_name' => 'required|max:255',
             'last_name' => 'required|max:255',
             'email'=>'required|email',
             'position'=>'required|max:255',
-            'user_image' => 'mimes:jpeg,png,jpg',
+            'user_image' => 'nullable|mimes:jpeg,png,jpg',
             'role_id'=>'required',
             
         ]);
@@ -61,7 +61,7 @@ class AdminsController extends Controller
         //get image name
         $filename = $file->getClientOriginalName();
         //move image 
-        $file->move('storage/app/public/user_pics', $filename);
+        $file->move('user_pics', $filename);
      //$request->user_image->store('user_pics', 'public');
      User::create([
         "first_name" => $request->first_name,
@@ -91,7 +91,7 @@ class AdminsController extends Controller
             'email'=>'required',
             'position' => 'required|max:255',
             'role_id'=>'required',
-            'picture' => 'mimes:jpeg,png,jpg',
+            'picture' => 'nullable|mimes:jpeg,png,jpg',
         ]); 
         $img = ['picture' => $request->file('picture')->hashName()];
      

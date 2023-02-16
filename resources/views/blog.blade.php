@@ -34,7 +34,7 @@
 												<div class="post-item">
 													<div class="post-image">
 														<a href="{{ route('blogs.show',$blog->id) }}">
-															<img src="{{ asset('storage/app/public/blog/'.$blog->blog_image) }}" alt=" Blog post image " style="max-width: 260px; max-height: 249px">
+															<img src="{{ asset('storage/blog/'.$blog->blog_image) }}" alt=" Blog post image " style="max-width: 260px; max-height: 249px">
 														</a>
 													</div>
 													
